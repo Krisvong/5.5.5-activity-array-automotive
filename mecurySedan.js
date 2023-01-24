@@ -1,7 +1,7 @@
 
-const VehicleModule = require("./vehicleBaseClass");
+const VehicleModule = require("./vehicle").Vehicle;
 
-class Car extends VehicleModule.VehicleBaseClass {
+class Car extends VehicleModule {
     constructor(make, model, year, color, mileage){
         super(make, model, year, color, mileage);
         this.maximumPassengers = 5;
